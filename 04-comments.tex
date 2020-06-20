@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{verbatim}
+\begin{document}
+This is line 1 followed by a comment. % comment 1
+
+This is line 2 with emb%
+                       edded comment.
+
+This is line 3 followed by verbatim comment.
+
+\begin{comment}
+Comment line 1.
+Comment line 2.
+\end{comment}
+
+Rule: When \LaTeX{} encounters a \% character while processing an input
+file, it ignores the rest of the present line, the line break, and all
+whitespace at the begin%
+    ning of the next line.
+
+\end{document}

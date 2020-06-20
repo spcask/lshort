@@ -1,0 +1,74 @@
+% The article class does not start a new page by default, while report
+% and book do. The titlepage option is used to specify that a new page
+% should be started after the document title.
+
+\documentclass[titlepage]{article}
+\author{Susam Pal}
+\title{About \TeX}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Introduction}
+\TeX{} is a typesetting system designed and mostly written by Donald
+Knuth and released in 1978.
+
+\section{Metafont}
+Metafont, not strictly part of \TeX{}, is a font description system
+which allows the designer to describe characters algorithmically. This
+term derives from the fact that Metafont describes characters as having
+been drawn by abstract brushes (and erasers).
+
+\section{Macros}
+\TeX{} provides an unusual macro language; the definition of a macro not
+only includes a list of commands but also the syntax of the call. Macros
+are completely integrated with a full-scale interpreted compile-time
+language that also guides processing.
+
+\section{Development}
+The original source code for the current \TeX{} software is written in
+WEB, a mixture of documentation written in \TeX{} and a Pascal subset in
+order to ensure portability. For example, \TeX{} does all of its dynamic
+allocation itself from fixed-size arrays and uses only fixed-point
+arithmetic for its internal calculations. As a result, \TeX{} has been
+ported to almost all operating systems, usually by using the web2c
+program to convert the source code into C instead of directly compiling
+the Pascal code.
+
+\section{License}
+Donald Knuth has indicated several times that the source code of TeX has
+been placed into the ``public domain'', and he strongly encourages
+modifications or experimentations with this source code. Since the code
+is still copyrighted, it is technically free/open-source software and
+not in the public domain in the legal sense.
+
+\section{LaTeX}
+\LaTeX{}, a shortening of Lamport \TeX{} is a document preparation
+system. When writing, the writer uses plain text as opposed to
+formatted text as users of word processors like Microsoft Word. The
+writer uses markup tagging conventions to define the general structure
+of a document (such as article, book, and letter), to stylise text
+throughout a document (such as bold and italic), and to add citations
+and cross-references. A \TeX{} distribution such as \TeX{} Live or
+MikTeX is used to produce an output file (such as PDF or DVI) suitable
+for printing or digital distribution.
+
+\section{Compatibility}
+\LaTeX{} documents (*.tex) can be opened with any text editor. They
+consist of plain text and do not contain hidden formatting codes or
+binary instructions. Additionally, \TeX{} documents can be shared by
+rendering the \LaTeX{} file to Rich Text Format (.rtf) or XML. This can
+be done using the free software programs LaTeX2RTF or TeX4ht. \LaTeX{}
+can also be rendered to PDF files using the \LaTeX{} extension pdfLaTeX.
+\LaTeX{} files containing Unicode text can be processed into PDFs by the
+\LaTeX{} extension XeLaTeX.
+
+\section{Related}
+As a macro package, \LaTeX{} provides a set of macros for \TeX{} to
+interpret. There are many other macro packages for \TeX{}, including
+Plain \TeX{}, GNU Texinfo, AMSTeX, and ConTeXt. The default font for
+\LaTeX{} is Knuth's Computer Modern, which gives default documents
+created with \LaTeX{} the same distinctive look as those created with
+plain \TeX{}. XeTeX allows the use of OpenType and TrueType (that is,
+outlined) fonts for output files. There are also many editors for
+\LaTeX{}.
+\end{document}

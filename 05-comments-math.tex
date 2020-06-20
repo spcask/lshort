@@ -1,0 +1,21 @@
+\documentclass{article}
+\usepackage{verbatim}
+\usepackage{amsmath}
+\begin{document}
+\[
+    e^{i \pi} + 1 = 0 % Comment 1
+    % Comment 2
+    \begin{comment}
+    Comment 3
+    \end{comment}
+\]
+\begin{align*}
+    1 + 2 & = 3 \\
+    e^{i \pi} + 1 & = 0 \\
+    % Comment environment does not work inside complex environments such
+    % as align* environment in this case.
+    %\begin{comment}
+    Comment 4
+    %\end{comment}
+\end{align*}
+\end{document}
