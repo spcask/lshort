@@ -1,15 +1,16 @@
-\documentclass{book}
+\documentclass[landscape]{article}
+
+% In addition to using the landscape option with the document class, it
+% is also necessary to use the geometry package to set the PDF to
+% landscape size. Without it only the content is set in landscape mode
+% but the PDF (white background) remains in default portrait size.
+
+\usepackage{geometry}
 \author{Susam Pal}
 \title{About \TeX}
 \begin{document}
 \maketitle
 \tableofcontents
-
-% The report class should start with \chapter otherwise sections would
-% be numbered 0.1, 0.2, etc.
-
-\chapter{\TeX}
-
 \section{Introduction}
 \TeX{} is a typesetting system designed and mostly written by Donald
 Knuth and released in 1978.

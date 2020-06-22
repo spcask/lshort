@@ -1,15 +1,13 @@
-\documentclass{book}
+% In double-sided output, the outer margins are greater than the inner
+% margins. Pages 1 and 3 fall on the right side and page 2 falls on
+% left. Therefore, pages 1 and 3 have larger right margins and page 2
+% has larger left margin.
+\documentclass[twoside]{article}
 \author{Susam Pal}
 \title{About \TeX}
 \begin{document}
 \maketitle
 \tableofcontents
-
-% The report class should start with \chapter otherwise sections would
-% be numbered 0.1, 0.2, etc.
-
-\chapter{\TeX}
-
 \section{Introduction}
 \TeX{} is a typesetting system designed and mostly written by Donald
 Knuth and released in 1978.
